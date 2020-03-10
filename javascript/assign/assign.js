@@ -6,9 +6,6 @@
 
 // Note: This method mutates object and is loosely based on Object.assign (https://mdn.io/Object/assign).
 
-// Since
-// 0.10.0
-
 // Arguments
 // object (Object): The destination object.
 // [sources] (...Object): The source objects.

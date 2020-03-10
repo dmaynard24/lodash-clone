@@ -4,9 +4,6 @@
 
 // This method is like _.uniq except that it's designed and optimized for sorted arrays.
 
-// Since
-// 4.0.0
-
 // Arguments
 // array (Array): The array to inspect.
 
