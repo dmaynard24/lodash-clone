@@ -4,9 +4,6 @@
 
 // Computes the mean of the values in array.
 
-// Since
-// 4.0.0
-
 // Arguments
 // array (Array): The array to iterate over.
 
@@ -14,6 +11,10 @@
 // (number): Returns the mean.
 
 function mean(arr) {
+  if (!arr.length) {
+    return 0;
+  }
+
   return arr.reduce((a, c) => a + c) / arr.length;
 }
 
