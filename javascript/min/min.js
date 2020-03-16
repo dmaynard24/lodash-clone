@@ -15,7 +15,7 @@ function min(arr) {
     return undefined;
   }
 
-  return Math.min.apply(null, arr);
+  return arr.reduce((a, c) => (c < a ? c : a), arr[0]);
 }
 
 module.exports = min;

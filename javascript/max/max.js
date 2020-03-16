@@ -15,7 +15,7 @@ function max(arr) {
     return undefined;
   }
 
-  return Math.max.apply(null, arr);
+  return arr.reduce((a, c) => (c > a ? c : a), arr[0]);
 }
 
 module.exports = max;
