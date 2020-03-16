@@ -12,7 +12,9 @@
 // (*): Returns the maximum value.
 
 function maxBy(arr, iteratee) {
-  if (!arr.length) {
+  const { length } = arr;
+
+  if (!length) {
     return arr;
   }
 
@@ -21,10 +23,14 @@ function maxBy(arr, iteratee) {
     iteratee = (o) => o[str];
   }
 
+  if (length === 1) {
+    return iteratee(arr[0]);
+  }
+
   let maxObj = arr[0];
   let maxVal = iteratee(arr[0]);
 
-  for (let i = 1; i < arr.length; i++) {
+  for (let i = 1; i < length; i++) {
     const currValue = iteratee(arr[i]);
 
     if (currValue > maxVal) {
