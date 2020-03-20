@@ -11,6 +11,10 @@
 // (Array): Returns the new duplicate free array.
 
 function uniq(arr) {
+  if (!arr.length) {
+    return [];
+  }
+
   return Array.from(new Set(arr));
 }
 

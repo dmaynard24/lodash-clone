@@ -11,6 +11,10 @@
 // (Array): Returns the new duplicate free array.
 
 function sortedUniq(arr) {
+  if (!arr.length) {
+    return [];
+  }
+
   const result = [];
   const { length } = arr;
 

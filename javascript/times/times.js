@@ -12,6 +12,10 @@
 // (Array): Returns the array of results.
 
 function times(n, iteratee) {
+  if (n < 1) {
+    return [];
+  }
+
   const results = Array(n);
   for (let i = 0; i < n; i++) {
     results[i] = iteratee(i);
